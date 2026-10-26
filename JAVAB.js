@@ -402,9 +402,9 @@ function openLocation(location) {
     // window.open(mapsUrl, '_blank');
 }
 
+// Álbum compartido de Google Fotos
 function uploadPhoto() {
-    // ENLACE DE EJEMPLO: agregar aquí el enlace real a la carpeta de Google Drive.
-    // window.open('https://drive.google.com/drive/folders/TU_CARPETA', '_blank');
+    window.open('https://photos.app.goo.gl/b2UVjmavA8Pwxa6X6', '_blank', 'noopener');
 }
 
 function showDressCode() {
@@ -415,13 +415,14 @@ function showTips() {
     showToast("Tips y Notas", "La ceremonia será al aire libre. Se recomienda llegar 15 minutos antes ⛪");
 }
 
+// Regalos: el modal (datos bancarios / mesa de regalos) vive en regalo-modal.js
 function showGifts() {
-    // ENLACE DE EJEMPLO: agregar aquí el enlace real (WhatsApp, lista de regalos, etc.)
+    if (window.openGiftModal) window.openGiftModal();
 }
 
+// Confirmación de asistencia (Google Form)
 function confirmAttendance() {
-    // ENLACE DE EJEMPLO: agregar aquí el enlace real al Google Form de confirmación.
-    // window.open('https://forms.google.com/TU_FORMULARIO', '_blank');
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLScxojtt9jqEa84t0NWAciUShVSkWZlxG8qITy1HFrg_ssM1qA/viewform?usp=publish-editor', '_blank', 'noopener');
 }
 
 // Sistema de Toast
